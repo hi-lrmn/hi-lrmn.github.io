@@ -91,8 +91,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      # Add a step to inject secrets as environment variables
-      - name: Set up environment variables
+      # Fetch GitHub Secrets for Spotify
+      - name: Set up Spotify Secrets
         run: |
           echo "SPOTIFY_CLIENT_ID=${{ secrets.SPOTIFY_CLIENT_ID }}" >> $GITHUB_ENV
           echo "SPOTIFY_CLIENT_SECRET=${{ secrets.SPOTIFY_CLIENT_SECRET }}" >> $GITHUB_ENV
