@@ -73,12 +73,33 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      - name: Build with Next.js
+              # Print Spotify secrets before build (for debugging purposes)
+      - name: Print Spotify secrets before build
+        run: |
+         echo "SPOTIFY_CLIENT_ID: $SPOTIFY_CLIENT_ID"
+         echo "SPOTIFY_CLIENT_SECRET: $SPOTIFY_CLIENT_SECRET"
+         echo "SPOTIFY_REFRESH_TOKEN: $SPOTIFY_REFRESH_TOKEN"
         env:
-          SPOTIFY_CLIENT_ID: ${{ vars.SPOTIFY_CLIENT_ID }}
-          SPOTIFY_CLIENT_SECRET: ${{ vars.SPOTIFY_CLIENT_SECRET }}
-          SPOTIFY_REFRESH_TOKEN: ${{ vars.SPOTIFY_REFRESH_TOKEN }}
+         SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+         SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+         SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+      - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+      
+      - name: Print Spotify secrets after build
+        run: |
+          echo "SPOTIFY_CLIENT_ID: $SPOTIFY_CLIENT_ID"
+          echo "SPOTIFY_CLIENT_SECRET: $SPOTIFY_CLIENT_SECRET"
+          echo "SPOTIFY_REFRESH_TOKEN: $SPOTIFY_REFRESH_TOKEN"
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
