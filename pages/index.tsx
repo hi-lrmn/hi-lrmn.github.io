@@ -73,7 +73,7 @@ export default function Home() {
                       <a
                         rel="noopener noreferrer nofollow"
                         target="_blank"
-                        href="/instagram"
+                        href="https://instagram.com/romanroman.nya"
                         className="flex cursor-pointer items-center justify-center rounded-full border-white border-opacity-10 bg-opacity-10 p-1.5 transition-all"
                       >
                         <svg
@@ -89,7 +89,7 @@ export default function Home() {
                       <a
                         rel="noopener noreferrer nofollow"
                         target="_blank"
-                        href="/github"
+                        href="https://github.com/lrmn7"
                         className="flex cursor-pointer items-center justify-center rounded-full border-white border-opacity-10 bg-opacity-10 p-1.5 transition-all"
                       >
                         <svg
@@ -108,7 +108,7 @@ export default function Home() {
                       <a
                         rel="noopener noreferrer nofollow"
                         target="_blank"
-                        href="/spotify"
+                        href="https://open.spotify.com/user/31urnjrljaimmmf52sealktmdz3i/"
                         className="flex cursor-pointer items-center justify-center rounded-full border-white border-opacity-10 bg-opacity-10 p-1.5 transition-all"
                       >
                         <svg
@@ -124,7 +124,7 @@ export default function Home() {
                       <a
                         rel="noopener noreferrer nofollow"
                         target="_blank"
-                        href="/pinterest"
+                        href="https://id.pinterest.com/romanromannya"
                         className="flex cursor-pointer items-center justify-center rounded-full border-white border-opacity-10 bg-opacity-10 p-1.5 transition-all"
                       >
                         <svg
@@ -140,7 +140,7 @@ export default function Home() {
                       <a
                         rel="noopener noreferrer nofollow"
                         target="_blank"
-                        href="/patreon"
+                        href="https://www.patreon.com/mewwme"
                         className="h-6 fill-current text-primary transition-all dark:text-gray-200"
                       >
                         <svg
@@ -173,7 +173,7 @@ export default function Home() {
                             </svg>
                             <p className="text-sm font-medium text-indigo-100">
                               <a
-                                href="/madebytragic"
+                                href="https://discord.gg/6EXgrmtkPX"
                                 className="text-sm font-medium text-indigo-100"
                               >
                                 {servername}
@@ -204,7 +204,7 @@ export default function Home() {
                                       Personal Website
                                     </span>
                                     <span
-                                      title="/profile"
+                                      title="https://lrmn.is-a.dev/"
                                       className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]"
                                     >
                                       About me.
@@ -229,7 +229,7 @@ export default function Home() {
 
                         <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
                           <a
-                            href="/virtualphotography"
+                            href="https://vp.lrmn.fun/"
                             target="_blank"
                             rel="noopener noreferrer nofollow"
                             className="w-full transition-all sm:hover:opacity-70"
@@ -273,7 +273,7 @@ export default function Home() {
 
                         <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
                           <a
-                            href="/mybot"
+                            href="https://meww.me/"
                             target="_blank"
                             rel="noopener noreferrer nofollow"
                             className="w-full transition-all sm:hover:opacity-70"
@@ -317,7 +317,7 @@ export default function Home() {
 
                         <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
                           <a
-                            href="/mewstify"
+                            href="https://mewstify.vercel.app/"
                             target="_blank"
                             rel="noopener noreferrer nofollow"
                             className="w-full transition-all sm:hover:opacity-70"
