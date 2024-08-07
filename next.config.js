@@ -22,17 +22,17 @@ module.exports = {
       },
       {
         source: '/virtualphotography',
-        destination: 'https://lrmn-vp.site/',
+        destination: 'https://vp.lrmn.fun/',
         permanent: true,
       },
       {
-        source: '/ohclips',
-        destination: 'https://ohclips.vercel.app/',
+        source: '/mewstify',
+        destination: 'https://mewstify.vercel.app/',
         permanent: true,
       },
       {
         source: '/mybot',
-        destination: 'https://ohbot.is-a.fun/',
+        destination: 'https://meww.me/',
         permanent: true,
       },
       {

@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
 .bg-banner {
   background-size: cover;
   background-position: center;
-  background-image: url(/ds.gif);
+  background-image: url(/lrmnbanner.gif);
 }
 
 #snackbar {
@@ -83,3 +83,19 @@ body::-webkit-scrollbar {
   from {top: 20px; opacity: 1;}
   to {top: -30px; opacity: 0;}
 }
+
+/* Untuk browser yang mendukung scrollbar-width */
+/* Membuat scrollbar lebih tipis */
+::-webkit-scrollbar {
+  width: 8px; /* Atur lebar scrollbar */
+}
+
+/* Warna scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #383434; /* Warna scrollbar */
+  border-radius: 4px; /* Atur radius sudut scrollbar */
+}
+
+/* Untuk browser yang tidak mendukung scrollbar-width */
+/* Membuat scrollbar lebih tipis */
+scrollbar-width: thin;
