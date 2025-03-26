@@ -73,11 +73,10 @@ export default function Home() {
                 <div className="mt-3">
                   <Banners />
                   <div className="mt-3 flex flex-row flex-wrap items-center justify-center gap-4">
-                  <Link
-                      href="/instagram"
+                  <a
+                      href="https://instagram.com/romanroman.nya"
                       target="_blank"
                       rel="noopener noreferrer"
-                      passHref
                     >
                       <Image
                         src={instagram}
@@ -85,9 +84,9 @@ export default function Home() {
                         width={24}
                         height={24}
                       />
-                    </Link>
+                    </a>
                     <a
-                      href="/twitter"
+                      href="https://x.com/romanromannya"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -98,11 +97,11 @@ export default function Home() {
                         height={24}
                       />
                     </a>
-                    <a href="/tiktok" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.tiktok.com/@romanroman.nya" target="_blank" rel="noopener noreferrer">
                       <Image src={tiktok} alt="TikTok" width={24} height={24} />
                     </a>
                     <a
-                      href="/pinterest"
+                      href="https://id.pinterest.com/romanromannya"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -113,11 +112,11 @@ export default function Home() {
                         height={24}
                       />
                     </a>
-                    <a href="/github" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/lrmn7" target="_blank" rel="noopener noreferrer">
                       <Image src={github} alt="GitHub" width={24} height={24} />
                     </a>
                     <a
-                      href="/spotify"
+                      href="https://open.spotify.com/artist/3jHW4HKnaYSaEmovirJRKj"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -129,7 +128,7 @@ export default function Home() {
                       />
                     </a>
                     <a
-                      href="/discord"
+                      href="https://discord.gg/6EXgrmtkPX"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -141,7 +140,7 @@ export default function Home() {
                       />
                     </a>
                     <a
-                      href="/youtube"
+                      href="https://www.youtube.com/@lrmn_vp"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -152,14 +151,14 @@ export default function Home() {
                         height={24}
                       />
                     </a>
-                    <a href="/medium" target="_blank" rel="noopener noreferrer">
+                    <a href="https://medium.com/@lrmn" target="_blank" rel="noopener noreferrer">
                       <Image src={medium} alt="Medium" width={24} height={24} />
                     </a>
 
                     <div className="max-w-s mt-1 w-full space-y-2">
                       <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
                         <a
-                          href="/profile"
+                          href="https://lrmn.is-a.dev/"
                           target="_blank"
                           rel="noopener noreferrer nofollow"
                           className="w-full transition-all sm:hover:opacity-70"
@@ -172,13 +171,13 @@ export default function Home() {
                                 </div>
                                 <div className="mx-4 flex flex-col">
                                   <span
-                                    title="Nothing"
+                                    title="Personal Website"
                                     className="text-ellipsis text-[16px] text-zinc-400"
                                   >
                                     Personal Website
                                   </span>
                                   <span
-                                    title="Nothing"
+                                    title="Personal Website"
                                     className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]"
                                   >
                                     Explore my biography, projects, and more
@@ -203,7 +202,7 @@ export default function Home() {
 
                       <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
                         <a
-                          href="/virtualphotography"
+                          href="https://vp.lrmn.fun"
                           target="_blank"
                           rel="noopener noreferrer nofollow"
                           className="w-full transition-all sm:hover:opacity-70"
@@ -216,7 +215,7 @@ export default function Home() {
                                 </div>
                                 <div className="mx-4 flex flex-col">
                                   <span
-                                    title="Nothing"
+                                    title="Virtual Photography"
                                     className="text-ellipsis text-[16px] text-zinc-400"
                                   >
                                     Virtual Photography
@@ -290,7 +289,7 @@ export default function Home() {
 
                       <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
                         <a
-                          href="/mewwme"
+                          href="https://mewwme.is-a.fun/"
                           target="_blank"
                           rel="noopener noreferrer nofollow"
                           className="w-full transition-all sm:hover:opacity-70"

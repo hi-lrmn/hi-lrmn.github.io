@@ -84,8 +84,8 @@ export default function PassiveIncome() {
                 <div className="mt-3">
                   <Banners />
                   <div className="mt-3 flex flex-row flex-wrap items-center justify-center gap-4">
-                    <a
-                      href="/instagram"
+                  <a
+                      href="https://instagram.com/romanroman.nya"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -97,7 +97,7 @@ export default function PassiveIncome() {
                       />
                     </a>
                     <a
-                      href="/twitter"
+                      href="https://x.com/romanromannya"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -108,11 +108,11 @@ export default function PassiveIncome() {
                         height={24}
                       />
                     </a>
-                    <a href="/tiktok" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.tiktok.com/@romanroman.nya" target="_blank" rel="noopener noreferrer">
                       <Image src={tiktok} alt="TikTok" width={24} height={24} />
                     </a>
                     <a
-                      href="/pinterest"
+                      href="https://id.pinterest.com/romanromannya"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -123,11 +123,11 @@ export default function PassiveIncome() {
                         height={24}
                       />
                     </a>
-                    <a href="/github" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/lrmn7" target="_blank" rel="noopener noreferrer">
                       <Image src={github} alt="GitHub" width={24} height={24} />
                     </a>
                     <a
-                      href="/spotify"
+                      href="https://open.spotify.com/artist/3jHW4HKnaYSaEmovirJRKj"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -139,7 +139,7 @@ export default function PassiveIncome() {
                       />
                     </a>
                     <a
-                      href="/discord"
+                      href="https://discord.gg/6EXgrmtkPX"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -151,7 +151,7 @@ export default function PassiveIncome() {
                       />
                     </a>
                     <a
-                      href="/youtube"
+                      href="https://www.youtube.com/@lrmn_vp"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -162,13 +162,8 @@ export default function PassiveIncome() {
                         height={24}
                       />
                     </a>
-                    <a href="/medium" target="_blank" rel="noopener noreferrer">
-                      <Image
-                        src={medium}
-                        alt="Spotify"
-                        width={24}
-                        height={24}
-                      />
+                    <a href="https://medium.com/@lrmn" target="_blank" rel="noopener noreferrer">
+                      <Image src={medium} alt="Medium" width={24} height={24} />
                     </a>
                     {/* Komponen Banners dan blok sosial media telah dihapus */}
 
