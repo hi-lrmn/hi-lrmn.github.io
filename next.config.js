@@ -19,7 +19,7 @@ module.exports = {
       {
         source: '/profile',
         destination: 'https://lrmn.is-a.dev/',
-        permanent: true,
+        permanent: false,
       },
       {
         source: '/virtualphotography',
