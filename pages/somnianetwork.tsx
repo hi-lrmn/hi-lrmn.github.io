@@ -1,7 +1,6 @@
-import { NowPlaying } from "../components";
 import Image from "next/image";
-import Banners from "../components/Banner";
 import Link from "next/link";
+import Banners from "../components/Banner";
 const name = "L RMN";
 const Bio1 = "❝Signed off to live a different story❞";
 const Bio2 = "Blogger | Dreamer | Observer 🗿";
@@ -14,7 +13,13 @@ import discord from "../public/assests/logo/social/discord.svg";
 import spotify from "../public/assests/logo/social/spotify.svg";
 import tiktok from "../public/assests/logo/social/tiktok.png";
 import youtube from "../public/assests/logo/social/youtube.svg";
-export default function Home() {
+import somniaAurora from "../public/assests/logo/Aurora.png";
+import somniaDark from "../public/assests/logo/Dark.png";
+import somniaLight from "../public/assests/logo/Light.png";
+import Medium from "../public/assests/logo/medium.webp";
+import Xtwitter from "../public/assests/logo/x-twitter.png";
+
+export default function SomniaNetwork() {
   return (
     <div>
       <div className="flex flex-col">
@@ -152,13 +157,19 @@ export default function Home() {
                       />
                     </a>
                     <a href="/medium" target="_blank" rel="noopener noreferrer">
-                      <Image src={medium} alt="Medium" width={24} height={24} />
+                      <Image
+                        src={medium}
+                        alt="Spotify"
+                        width={24}
+                        height={24}
+                      />
                     </a>
 
+                    {/* Blok Link yang sudah ada */}
                     <div className="max-w-s mt-1 w-full space-y-2">
                       <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
                         <a
-                          href="/profile"
+                          href="/somnia"
                           target="_blank"
                           rel="noopener noreferrer nofollow"
                           className="w-full transition-all sm:hover:opacity-70"
@@ -167,194 +178,18 @@ export default function Home() {
                             <span className="relative mt-2 flex w-full flex-row items-center justify-between rounded bg-zinc-900 text-sm leading-tight">
                               <div className="flex items-center justify-center">
                                 <div className="flex h-16 w-16 items-center justify-center rounded bg-zinc-800 bg-opacity-50">
-                                  <span className="">🌐</span>
+                                  <Image
+                                    src={somniaAurora}
+                                    alt="Icon"
+                                    width={16}
+                                    height={16}
+                                  />
                                 </div>
                                 <div className="mx-4 flex flex-col">
-                                  <span
-                                    title="Nothing"
-                                    className="text-ellipsis text-[16px] text-zinc-400"
-                                  >
-                                    Personal Website
-                                  </span>
-                                  <span
-                                    title="Nothing"
-                                    className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]"
-                                  >
-                                    Explore my biography, projects, and more
-                                  </span>
-                                </div>
-                              </div>
-                              <span className="absolute right-2 text-zinc-600 transition-all">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
-                                  aria-hidden="true"
-                                  className="h-4 w-8"
-                                >
-                                  <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-                                </svg>
-                              </span>
-                            </span>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
-                        <a
-                          href="/virtualphotography"
-                          target="_blank"
-                          rel="noopener noreferrer nofollow"
-                          className="w-full transition-all sm:hover:opacity-70"
-                        >
-                          <div>
-                            <span className="relative mt-2 flex w-full flex-row items-center justify-between rounded bg-zinc-900 text-sm leading-tight">
-                              <div className="flex items-center justify-center">
-                                <div className="flex h-16 w-16 items-center justify-center rounded bg-zinc-800 bg-opacity-50">
-                                  <span className=""> 📸 </span>
-                                </div>
-                                <div className="mx-4 flex flex-col">
-                                  <span
-                                    title="Nothing"
-                                    className="text-ellipsis text-[16px] text-zinc-400"
-                                  >
-                                    Virtual Photography
-                                  </span>
-                                  <span
-                                    title="Web toolbox"
-                                    className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]"
-                                  >
-                                    A collection of my in-game photography
-                                  </span>
-                                </div>
-                              </div>
-                              <span className="absolute right-2 text-zinc-600 transition-all">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
-                                  aria-hidden="true"
-                                  className="h-4 w-8"
-                                >
-                                  <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-                                </svg>
-                              </span>
-                            </span>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
-                        <Link
-                          href="/mymusic"
-                          passHref
-                          className="w-full transition-all sm:hover:opacity-70"
-                        >
-                          <div>
-                            <span className="relative mt-2 flex w-full flex-row items-center justify-between rounded bg-zinc-900 text-sm leading-tight">
-                              <div className="flex items-center justify-center">
-                                <div className="flex h-16 w-16 items-center justify-center rounded bg-zinc-800 bg-opacity-50">
-                                  <span className=""> 📀 </span>
-                                </div>
-                                <div className="mx-4 flex flex-col">
-                                  <span
-                                    title="Nothing"
-                                    className="text-ellipsis text-[16px] text-zinc-400"
-                                  >
-                                    Listen to My Music
-                                  </span>
-                                  <span
-                                    title=""
-                                    className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]"
-                                  >
-                                    Those who wish to sing always find a song ♪
-                                  </span>
-                                </div>
-                              </div>
-                              <span className="absolute right-2 text-zinc-600 transition-all">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
-                                  aria-hidden="true"
-                                  className="h-4 w-8"
-                                >
-                                  <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-                                </svg>
-                              </span>
-                            </span>
-                          </div>
-                        </Link>
-                      </div>
-
-                      <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
-                        <a
-                          href="/mewwme"
-                          target="_blank"
-                          rel="noopener noreferrer nofollow"
-                          className="w-full transition-all sm:hover:opacity-70"
-                        >
-                          <div>
-                            <span className="relative mt-2 flex w-full flex-row items-center justify-between rounded bg-zinc-900 text-sm leading-tight">
-                              <div className="flex items-center justify-center">
-                                <div className="flex h-16 w-16 items-center justify-center rounded bg-zinc-800 bg-opacity-50">
-                                  <span className=""> 🤖 </span>
-                                </div>
-                                <div className="mx-4 flex flex-col">
-                                  <span
-                                    title="Nothing"
-                                    className="text-ellipsis text-[16px] text-zinc-400"
-                                  >
-                                    Mewwme&apos;s
-                                  </span>
-                                  <span
-                                    title=""
-                                    className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]"
-                                  >
-                                    The music bot that fills your server with
-                                    endless melodies
-                                  </span>
-                                </div>
-                              </div>
-                              <span className="absolute right-2 text-zinc-600 transition-all">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
-                                  aria-hidden="true"
-                                  className="h-4 w-8"
-                                >
-                                  <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
-                                </svg>
-                              </span>
-                            </span>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
-                        <Link
-                          href="/somnianetwork"
-                          passHref
-                          className="w-full transition-all sm:hover:opacity-70"
-                        >
-                          <div>
-                            <span className="relative mt-2 flex w-full flex-row items-center justify-between rounded bg-zinc-900 text-sm leading-tight">
-                              <div className="flex items-center justify-center">
-                                <div className="flex h-16 w-16 items-center justify-center rounded bg-zinc-800 bg-opacity-50">
-                                  <span className=""> ⛓️ </span>
-                                </div>
-                                <div className="mx-4 flex flex-col">
-                                  <span
-                                    title="Nothing"
-                                    className="text-ellipsis text-[16px] text-zinc-400"
-                                  >
+                                  <span className="text-ellipsis text-[16px] text-zinc-400">
                                     Somnia Network
                                   </span>
-                                  <span
-                                    title="The Dream Computer"
-                                    className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]"
-                                  >
+                                  <span className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]">
                                     The fastest and most cost-efficient
                                     EVM-compatible Layer 1 for a fully Onchain
                                     World
@@ -374,34 +209,34 @@ export default function Home() {
                               </span>
                             </span>
                           </div>
-                        </Link>
+                        </a>
                       </div>
 
                       <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
-                        <Link
-                          href="/passiveincome"
-                          passHref
+                        <a
+                          href="https://www.yourbe.fun/"
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
                           className="w-full transition-all sm:hover:opacity-70"
                         >
                           <div>
                             <span className="relative mt-2 flex w-full flex-row items-center justify-between rounded bg-zinc-900 text-sm leading-tight">
                               <div className="flex items-center justify-center">
                                 <div className="flex h-16 w-16 items-center justify-center rounded bg-zinc-800 bg-opacity-50">
-                                  <span className=""> 💸 </span>
+                                  <Image
+                                    src={somniaDark}
+                                    alt="Icon"
+                                    width={16}
+                                    height={16}
+                                  />
                                 </div>
                                 <div className="mx-4 flex flex-col">
-                                  <span
-                                    title="Nothing"
-                                    className="text-ellipsis text-[16px] text-zinc-400"
-                                  >
-                                    Passive Income
+                                  <span className="text-ellipsis text-[16px] text-zinc-400">
+                                    Your Be Fun
                                   </span>
-                                  <span
-                                    title=""
-                                    className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]"
-                                  >
-                                    Looking for a way to earn passive income
-                                    effortlessly?
+                                  <span className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]">
+                                    Send fun messages using SOMNIA TESTNET TOKEN
+                                    (STT) on the Somnia testnet!
                                   </span>
                                 </div>
                               </div>
@@ -418,28 +253,166 @@ export default function Home() {
                               </span>
                             </span>
                           </div>
-                        </Link>
+                        </a>
+                      </div>
+
+                      <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
+                        <a
+                          href="https://mint.yourbe.fun/"
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          className="w-full transition-all sm:hover:opacity-70"
+                        >
+                          <div>
+                            <span className="relative mt-2 flex w-full flex-row items-center justify-between rounded bg-zinc-900 text-sm leading-tight">
+                              <div className="flex items-center justify-center">
+                                <div className="flex h-16 w-16 items-center justify-center rounded bg-zinc-800 bg-opacity-50">
+                                  <Image
+                                    src={somniaLight}
+                                    alt="Icon"
+                                    width={16}
+                                    height={16}
+                                  />
+                                </div>
+                                <div className="mx-4 flex flex-col">
+                                  <span className="text-ellipsis text-[16px] text-zinc-400">
+                                    Fun Mint
+                                  </span>
+                                  <span className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]">
+                                    Explore, Create, and Collect Exclusive
+                                    Digital Art NFTs.
+                                  </span>
+                                </div>
+                              </div>
+                              <span className="absolute right-2 text-zinc-600 transition-all">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 20 20"
+                                  fill="currentColor"
+                                  aria-hidden="true"
+                                  className="h-4 w-8"
+                                >
+                                  <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+                                </svg>
+                              </span>
+                            </span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
+                        <a
+                          href="https://medium.com/@lrmn"
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          className="w-full transition-all sm:hover:opacity-70"
+                        >
+                          <div>
+                            <span className="relative mt-2 flex w-full flex-row items-center justify-between rounded bg-zinc-900 text-sm leading-tight">
+                              <div className="flex items-center justify-center">
+                                <div className="flex h-16 w-16 items-center justify-center rounded bg-zinc-800 bg-opacity-50">
+                                  <Image
+                                    src={Medium}
+                                    alt="Icon"
+                                    width={24}
+                                    height={24}
+                                  />
+                                </div>
+                                <div className="mx-4 flex flex-col">
+                                  <span className="text-ellipsis text-[16px] text-zinc-400">
+                                    Medium
+                                  </span>
+                                  <span className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]">
+                                    I love exploring anything related to
+                                    technology.
+                                  </span>
+                                </div>
+                              </div>
+                              <span className="absolute right-2 text-zinc-600 transition-all">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 20 20"
+                                  fill="currentColor"
+                                  aria-hidden="true"
+                                  className="h-4 w-8"
+                                >
+                                  <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+                                </svg>
+                              </span>
+                            </span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
+                        <a
+                          href="https://x.com/romanromannya"
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          className="w-full transition-all sm:hover:opacity-70"
+                        >
+                          <div>
+                            <span className="relative mt-2 flex w-full flex-row items-center justify-between rounded bg-zinc-900 text-sm leading-tight">
+                              <div className="flex items-center justify-center">
+                                <div className="flex h-16 w-16 items-center justify-center rounded bg-zinc-800 bg-opacity-50">
+                                  <Image
+                                    src={Xtwitter}
+                                    alt="Icon"
+                                    width={24}
+                                    height={24}
+                                  />
+                                </div>
+                                <div className="mx-4 flex flex-col">
+                                  <span className="text-ellipsis text-[16px] text-zinc-400">
+                                    Twitter
+                                  </span>
+                                  <span className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]">
+                                    My personal Twitter.
+                                  </span>
+                                </div>
+                              </div>
+                              <span className="absolute right-2 text-zinc-600 transition-all">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 20 20"
+                                  fill="currentColor"
+                                  aria-hidden="true"
+                                  className="h-4 w-8"
+                                >
+                                  <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+                                </svg>
+                              </span>
+                            </span>
+                          </div>
+                        </a>
                       </div>
                     </div>
+
+                    {/* Tambahan tombol Home */}
+                    <div className="mt-6">
+                      <Link
+                        href="/"
+                        className="inline-block rounded bg-gray-800 px-3 py-1 text-zinc-400 transition-all hover:bg-gray-700"
+                      >
+                        Back
+                      </Link>
+                    </div>
                   </div>
-                  <div className="flex items-center justify-center rounded-full bg-primary bg-opacity-90 text-xs font-medium text-banner"></div>
-                  <div className="mb-4 flex justify-center"></div>
                 </div>
               </div>
-              <NowPlaying />
-            </div>
-          </div>
-        </div>
-        <div className="mb-4 flex justify-center">
-          <div className="flex items-center justify-center rounded-full bg-primary bg-opacity-90 text-xs font-medium text-banner">
-            <footer>
-              <div className="container mx-auto text-center">
-                Made by TRAGIC in BOGOR
-                <p className="text-gray text-s">
-                  © {new Date().getFullYear()} L RMN. All rights reserved.
-                </p>
+              <div className="mb-4 flex justify-center">
+                <div className="flex items-center justify-center rounded-full bg-primary bg-opacity-90 text-xs font-medium text-banner">
+                  <footer>
+                    <div className="container mx-auto text-center">
+                      Made by TRAGIC in BOGOR
+                      <p className="text-gray text-s">
+                        © {new Date().getFullYear()} L RMN. All rights reserved.
+                      </p>
+                    </div>
+                  </footer>
+                </div>
               </div>
-            </footer>
+            </div>
           </div>
         </div>
       </div>
