@@ -73,10 +73,11 @@ export default function Home() {
                 <div className="mt-3">
                   <Banners />
                   <div className="mt-3 flex flex-row flex-wrap items-center justify-center gap-4">
-                    <a
+                  <Link
                       href="/instagram"
                       target="_blank"
                       rel="noopener noreferrer"
+                      passHref
                     >
                       <Image
                         src={instagram}
@@ -84,7 +85,7 @@ export default function Home() {
                         width={24}
                         height={24}
                       />
-                    </a>
+                    </Link>
                     <a
                       href="/twitter"
                       target="_blank"
