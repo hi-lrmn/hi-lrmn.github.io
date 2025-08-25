@@ -136,7 +136,7 @@ export default function Home() {
                       />
                     </a>
                     <a
-                      href="https://discord.gg/6EXgrmtkPX"
+                      href="https://discord.com/invite/9HkKkkA9Jt"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -148,7 +148,7 @@ export default function Home() {
                       />
                     </a>
                     <a
-                      href="https://www.youtube.com/@lrmn_music"
+                      href="https://www.youtube.com/@eleremen"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
